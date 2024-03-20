@@ -1,0 +1,26 @@
+{% extends 'navigationbar.html' %}
+
+{% load static %}
+
+<html>
+    <head>
+        <title> about page</title>
+    </head>
+    {% block body %}
+    <div class="container" style="margin-top: 50px;">
+        <h2 class="text-center"> About us</h2><br>
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <img src="{% static 'images/jinal_official_pic.jpg' %}">
+            </div>
+            <div class="col-sm-8 font-weight-bold mt-5">
+                Our advance health digital health HMS tools channel communication across departments by maximizing the healthcare operational management and automating critical tasks.<br>
+                Depending on your resource management needs, we cover and develop all the modules to automate and increase the efficiency of your workflows.<br>
+                Our HMS provides actionable data insights into the healthcare episodes and streamlines the inside operations, using these insights to improve your organization's experiences, care, and financial outcomes.<br>
+                Successive’s HMS tools help hospitals save high costs by streamlining the overall administrative and operational tasks, reducing the time and effort required to complete them.<br><br>
+                <h4 style="text-align:center;"><i class='fas fa-smile' style='font-size:22px'></i>&nbsp;Thank You&nbsp;<i class='fas fa-smile' style='font-size:22px'></i></h4>
+            </div> 
+        </div>
+    </div>
+    {% endblock %}
+</html>

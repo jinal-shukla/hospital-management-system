@@ -1,0 +1,43 @@
+{% extends 'navigationbar.html' %}
+
+{% load static %}
+
+<html>
+    <head>
+        <title>contact page</title>
+    </head>
+    {% block body %}
+    <style>
+    .mydivstyle:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        padding: 1em;
+        transform: translateY(-20px);
+    }
+    </style>
+    <div class="container" style="margin-top: 50px;">
+        <h2 class="text-center">Contact Us</h2>
+        <br>
+        <div class="row mt-5 text-center">
+            <div class="col-lg-3 col-sm-6 mydivstyle">
+                <h4><i class='fas fa-phone' style='font-size:22px'></i>&nbsp;&nbsp;Contact</h4>
+                <p class="mt-3 font-weight-bold"><a class="text-danger" href="tel:+91 8511164881">+91 8511164881</a></p>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mydivstyle">
+                <h4><i class='fas fa-inbox' style='font-size:22px'></i>&nbsp;&nbsp;Send Email</h4>
+                <p class="mt-3 font-weight-bold"><a class="text-danger" href="mailto:jinaldshukla@gmail.com">jinaldshukla@gmail.com</a></p>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mydivstyle">
+                <h4><i class='fas fa-address-card' style='font-size:22px'></i>&nbsp;&nbsp;Office Address</h4>
+                <p class="mt-3 font-weight-bold"><a class="text-danger" href="http://maps.google.com/maps?q=Arihant Park+Krishnanagar+Ahmedabad+Gujarat">Arihant park, Krishnanagar<br>Ahmedabad, Gujarat <br>382345</a></p>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mydivstyle">
+                <h4><i class='fas fa-clock' style='font-size:22px'></i>&nbsp;&nbsp;Office Hours</h4>
+                <p class="mt-3 font-weight-bold"><a class="text-danger">9:00 AM to 7:00 PM</a></p>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</html>
